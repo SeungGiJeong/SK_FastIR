@@ -1,0 +1,11 @@
+[profiles]
+packages=dump
+
+[dump]
+dump=mft,mbr
+mft_export=True
+
+[output]
+type=csv
+destination=local
+dir=output
