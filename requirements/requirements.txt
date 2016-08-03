@@ -1,0 +1,11 @@
+WMI
+psutil
+pyyaml
+pyasn1
+pyasn1_modules
+construct
+distorm3
+hexdump
+pytz
+yara
+utils

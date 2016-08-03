@@ -259,10 +259,10 @@ def parse_command_line():
 
 
 def parse_config_file(config_file, param_options):
-    """Parse config file specified in argument, or default config file (FastIR.conf)"""
+    """Parse config file specified in argument, or default config file (horangi.config)"""
     # If no config_file was specified, fallback to bundled config
     if not config_file:
-        config_file = "FastIR.conf"
+        config_file = "Horangi.config"
         # If app is frozen with pyinstaller, look for temporary file path
         if hasattr(sys, "frozen"):
             config_file = os.path.join(sys._MEIPASS, config_file)
