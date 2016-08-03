@@ -1,3 +1,10 @@
+To pull new hotness from the public repo:  
+{code}
+git remote add public https://github.com/SekoiaLab/Fastir_Collector.git
+git pull public master # Creates a merge commit
+git push origin master
+{code}
+
 #FastIR Collector
 ##Concepts
 
