@@ -39,4 +39,4 @@ a.datas += [('FastIR.conf', 'FastIR.conf', 'DATA')]
 
 exe = EXE(pyz, a.scripts, a.binaries, a.zipfiles, a.datas,
 		  name = binary_name, debug = False, strip = None,
-		  upx = True, console = True, icon="sekoia.ico")
+		  upx = True, console = True, icon="Horangi.ico")
