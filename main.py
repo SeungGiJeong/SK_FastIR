@@ -23,7 +23,8 @@ import ctypes
 import settings
 import random
 import string
-
+import Def_Locale
+import OS_Info
 
 def set_logger(param_options):
     # Stream logger class for printing only INFO level messages
@@ -365,13 +366,15 @@ def main(param_options):
         return 0
 
     set_logger(param_options)
-
+    OS_Info.get_process_info(param_options)
+    
     modules = factory.load_modules(param_options["packages"], param_options["output_dir"])
 
     for m in modules:
         classes = factory.load_classes(m, param_options["OS"], param_options["release"])
         for cl in classes:
             instance = cl(param_options)
+            
             if "dump" in str(cl):
                 for opt in param_options["dump"].split(","):
                     try:
